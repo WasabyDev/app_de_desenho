@@ -16,7 +16,6 @@
             var largura = 1000
             var altura = 600
 
-
             var quadro = document.getElementById('quadro')
             quadro.setAttribute("width", largura)
             quadro.setAttribute("height", altura)
@@ -45,8 +44,6 @@
                 }
             }
 
-            // Adiciona eventos de toque ao canvas 
-
             quadro.addEventListener('touchstart', function (evt) {
 
                 evt.preventDefault();
@@ -55,8 +52,6 @@
                 desenhando = true;
 
             }, false);
-
-
 
             quadro.addEventListener('touchmove', function (evt) {
 
